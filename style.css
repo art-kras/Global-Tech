@@ -1,0 +1,35 @@
+.navigation{
+    background-color: #27005D;
+    margin-left: 550px;
+    text-align: right;
+    padding: 15px;
+    word-spacing: 8px;
+  
+}
+
+
+.background{
+
+    width: 1910px;
+    height: 600;
+    z-index: 1;
+}
+
+
+
+
+.A{
+    float: right;
+}
+
+.V{
+    float: left;
+}
+
+.p1{
+    float: left;
+}
+
+.p2{
+    float: right;
+}
