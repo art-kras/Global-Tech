@@ -1,35 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
 .navigation{
-    background-color: #27005D;
-    margin-left: 550px;
-    text-align: right;
-    padding: 15px;
-    word-spacing: 8px;
+
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+}
+
+nav ul{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav ul li{
+    
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    line-height: 40px;  
+    line-clamp: 20;
+    text-align: justify;
+    font-size: 20px;
+  
+
+}
+
+nav ul li a{
+    
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+   text-align: middle;
+   width: 200px;
+
   
 }
 
+nav ul li a:hover{
 
-.background{
-
-    width: 1910px;
-    height: 600;
-    z-index: 1;
+    color:aqua;
+    transition: .3s;
 }
 
-
-
-
-.A{
-    float: right;
+nav ul li ul li{
+    display: none;
 }
 
-.V{
-    float: left;
+nav ul li:hover ul li{
+    display: block;
 }
 
-.p1{
-    float: left;
+button {
+    
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
 }
 
-.p2{
-    float: right;
+button:hover{
+
+    background-color: cyan;
+    transition: .4s;
 }
