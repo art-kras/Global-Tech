@@ -7,32 +7,38 @@
 
 .navigation{
 
+    display: block;
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
+
 nav{
-    display: flex;
     align-items: right;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 25px 10px;
+    display: flex;
+    margin-bottom: 50px;
 }
 
 .logo{
     color: white;
     font-size: 28px;
+    margin-top: 11px;
+    font-family: 'a Astro Space', sans-serif;
 }
+
 
 nav ul{
 
     margin: 0px;
     padding: 0px;
     list-style: none;
+    font-family: 'a Astro Space', sans-serif;
 }
 
 nav ul li{
@@ -56,8 +62,8 @@ nav ul li a{
    font-weight: bold;
    display: block;
    text-align: middle;
-   width: 200px;
-
+   width: 400px;
+   font-family: 'a Astro Space', sans-serif;
   
 }
 
@@ -87,3 +93,99 @@ button:hover{
     background-color: cyan;
     transition: .4s;
 }
+
+.img{
+
+    margin: 25px;
+    
+}
+
+/* About us */
+
+.about{
+    background-color: #123A51;
+    height: 100vh;
+}
+
+.A{
+    float: left;
+    width: 240px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.p1{
+    justify-content: center;
+    align-items: right;
+    margin-bottom: 30vh;
+    color: white;
+    padding: 15px;
+    font-family: 'a Astro Space', sans-serif;
+    
+}
+
+
+.V{
+    float: right;
+    width: 240px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.p2{
+    justify-content: flex-start;
+    align-items: left;
+    color: white;
+    padding: 15px;
+    font-family: 'a Astro Space', sans-serif;
+
+}
+
+h1{
+    font-family: 'a Astro Space', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+/* Products */
+
+.products{
+    background-color: #0D2B3C;
+    height: 100vh;    
+    align-items: center;
+    
+}
+
+
+#artikulli{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+
+}
+
+#artikulli div{
+
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+#artikulli div img{
+    width: 94%;
+    height: 80%;
+    border-radius: 30px;
+    border: 5px solid darkblue;
+}
+
+
+
+
+
+
