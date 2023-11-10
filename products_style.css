@@ -100,125 +100,33 @@ button:hover{
     
 }
 
-/* About us
 
-.about{
-    margin: 0;
-    display: flex;
-    padding: 40px;
-}
-
-.about h1{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-}
-
-
-.text-box{
-    color: black;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-    padding-left: 15px;
-    margin-right: 70vh;
-    margin-bottom: 80px;
-
-
-
-}
-
-
-.left img{
-    float: left;
-    border: 15px;
-    margin-bottom: 50px;
-}
-
- /* right image */
-
-.text-box-V{
-    color: black;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-    padding-left: 15px;
-    margin-right: 70vh;
-    margin-bottom: 80px;
-
-}
-
-
-.right img{
-    display: flex;
-    justify-content: flex-end;
-    float: right;
-    border: 15px;
-    margin-bottom: 50px;
-} */
-
-
-
-
-/* @media (max-width: 768px) {
-    .left,
-    .right {
-        flex-direction: column;
-    }
-
-    .left img,
-    .right img {
-        width: 100%;
-        height: auto;
-    }
-}
- */
-
-
-/* Products */
+/* products */
 
 .products{
-    background-color: #0D2B3C;
-    height: 100vh;    
-    align-items: center;
-    
+
+    background-color: #163F53;
+   
 }
 
+.products a{
 
-#artikulli{
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
-
+  
 }
 
-#artikulli div{
+.flex img{
 
-    align-items: center;
-    margin: 10px;
-    width: 100%;
-    padding: 10px;
-
-}
-
-#artikulli div img{
-    width: 94%;
-    height: 80%;
+    width: 30%;
+    height: 20%;
     border-radius: 30px;
     border: 5px solid darkblue;
+    background-color: darkblue;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: space-evenly;
+
 }
-
-
-
-
-
 
