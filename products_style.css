@@ -103,30 +103,80 @@ button:hover{
 
 /* products */
 
-.products{
 
+.inventory {
     background-color: #163F53;
-   
-}
-
-.products a{
-
-  
-}
-
-.flex img{
-
-    width: 30%;
-    height: 20%;
-    border-radius: 30px;
-    border: 5px solid darkblue;
-    background-color: darkblue;
+    height: 300vh;
+    width: 100%;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-items: baseline;
-	align-content: space-evenly;
+	align-items: flex-start;
+	align-content: stretch;
+  }
 
+.inventory .h1{
+
+    font-size: 28px;
+    text-shadow: 3px 3px cyan;
+    align-self: center;
+    background-color: #163F53;
+    color: white;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    font-family: 'a Astro Space', sans-serif;
 }
+  
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+  }
+  
+  .textbox {
+    flex: 1;
+  }
+  
+  .textbox h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'a Astro Space', sans-serif;
+ 
+  }
+  
+  .textbox p {
+    max-width: 500px;
+    max-height: 400px;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: 'a Astro Space', sans-serif;
 
+  }
+  
+.textbox button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
