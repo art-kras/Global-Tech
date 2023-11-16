@@ -143,6 +143,8 @@ button:hover{
     max-height: 300px;
     margin-top: 20px;
     border-radius: 20px;
+    margin-left: 20px;
+    border: 4px groove rgb(57, 141, 141) ;
     
   }
   
@@ -151,7 +153,7 @@ button:hover{
   }
   
   .textbox h2 {
-    color: white;
+    color: cyan;
     font-size: 1.5em;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -161,11 +163,12 @@ button:hover{
   }
   
   .textbox p {
-    max-width: 500px;
+    max-width: 600px;
     max-height: 400px;
-    color: white;
+    color: cyan;
     margin-left: 30px;
     margin-bottom: 20px;
+    line-height: 30px;
     font-family: 'a Astro Space', sans-serif;
 
   }
@@ -173,10 +176,17 @@ button:hover{
 .textbox button {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #3498db;
+    background-color: transparent;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid white;
     cursor: pointer;
     margin-left: 30px;
+    font-family: 'a Astro Space', sans-serif;
   }
+
+.textbox button:hover{
+
+    background-color: cyan;
+    color: #163F53;
+    transition: .4s;
+}

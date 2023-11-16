@@ -100,125 +100,179 @@ button:hover{
     
 }
 
-/* About us
+ /* About us */
 
-.about{
-    margin: 0;
+
+.about {
+    background-color: #163F53;
+    height: 120vh;
+    width: 100%;
     display: flex;
-    padding: 40px;
-}
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+  }
 
-.about h1{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-}
+.about .h1{
 
-
-.text-box{
-    color: black;
+    font-size: 42px;
+    align-self: center;
+    text-shadow: 3px 3px cyan;
+    background-color: #163F53;
+    color: white;
     display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-    padding-left: 15px;
-    margin-right: 70vh;
-    margin-bottom: 80px;
-
-
-
+	align-items: center;
+	align-content: stretch;
+    font-family: 'a Astro Space', sans-serif;
 }
-
-
-.left img{
-    float: left;
-    border: 15px;
-    margin-bottom: 50px;
-}
-
- /* right image */
-
-.text-box-V{
-    color: black;
+  
+  .left {
     display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-    padding-left: 15px;
-    margin-right: 70vh;
-    margin-bottom: 80px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .left img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    
+  }
+  
+  .text-box {
+    flex: 1;
+  }
+  
+  .text-box h2 {
+    color: cyan;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'a Astro Space', sans-serif;
+ 
+  }
+  
+  .text-box p {
+    max-width: 600px;
+    max-height: 400px;
+    color: cyan;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-family: 'a Astro Space', sans-serif;
 
+  }
+  
+.about .btn {
+    
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 150px;
+    height: 100px;
+    font-family: 'a Astro Space', sans-serif;
+  }
+
+.about .btn:hover{
+
+    background-color: cyan;
+    color: #163F53;
+    transition: .4s;
 }
 
 
-.right img{
-    display: flex;
-    justify-content: flex-end;
-    float: right;
-    border: 15px;
-    margin-bottom: 50px;
-} */
 
 
-
-
-/* @media (max-width: 768px) {
-    .left,
-    .right {
+@media (max-width: 768px) {
+    .left {
         flex-direction: column;
+        max-height: 100%;
     }
 
-    .left img,
-    .right img {
-        width: 100%;
-        height: auto;
-    }
 }
- */
 
 
 /* Products */
 
-.products{
-    background-color: #0D2B3C;
-    height: 100vh;    
-    align-items: center;
-    
-}
+/* slider */
+ /* not finished */
 
+.sliderBack {
 
-#artikulli{
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
-
-}
-
-#artikulli div{
-
-    align-items: center;
-    margin: 10px;
+    margin: 5%;
+    margin-left: 20%;
+    /* background-color: #163F53;
+    height: 120vh;
     width: 100%;
-    padding: 10px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch; */
+}
+
+.slider {
+
+    
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.slider ul{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
 
 }
 
-#artikulli div img{
-    width: 94%;
-    height: 80%;
-    border-radius: 30px;
-    border: 5px solid darkblue;
+.slider ul li{
+     
+    position: relative;
+    height: 100%;
+    float: left;
+
 }
 
+.slider ul li img{
+    width: 1000px;
+    height: 600px;
+}
 
-
-
-
+.slider .prev{
+    width: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+}
 
