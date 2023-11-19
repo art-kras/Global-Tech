@@ -212,11 +212,11 @@ button:hover{
 /* slider */
  /* not finished */
 
-.sliderBack {
+/* .sliderBack {
 
     margin: 5%;
     margin-left: 20%;
-    /* background-color: #163F53;
+    background-color: #163F53;
     height: 120vh;
     width: 100%;
     display: flex;
@@ -224,7 +224,7 @@ button:hover{
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	align-content: stretch; */
+	align-content: stretch;
 }
 
 .slider {
@@ -274,5 +274,78 @@ button:hover{
     top: 50%;
     transform: translateY(-50%);
     transition: all 150ms ease;
-}
+} */
 
+
+/* Footer */
+
+footer {
+    background-color:#09232F;
+    color: cyan;
+    padding: 20px;
+    width: 100%;
+    
+  }
+  
+  .f {
+    display: flex;
+    justify-content: space-evenly;
+    color: #16B0A8;
+    padding-bottom: 25px;
+  }
+  
+  .f h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 18px;
+    align-items: center;
+
+  }
+
+  .f h2+h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+
+  .footermain {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px; 
+    color: grey;
+  }
+  
+  .footerleft {
+    display: flex;
+    width: 15%;
+    flex-wrap: nowrap;
+  }
+  
+
+  .footerright{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+    justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+    
+  }
+
+  .end {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 35px; 
+  }
+  
