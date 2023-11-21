@@ -1,0 +1,272 @@
+/* Navigation bar */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.navigation{
+
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+nav{
+    align-items: right;
+    justify-content: space-between;
+    padding: 25px 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    margin-top: 11px;
+    font-family: 'a Astro Space', sans-serif;
+}
+
+
+nav ul{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'a Astro Space', sans-serif;
+}
+
+nav ul li{
+    
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    line-height: 40px;  
+    line-clamp: 20;
+    text-align: justify;
+    font-size: 20px;
+  
+
+}
+
+nav ul li a{
+    
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+   text-align: middle;
+   width: 400px;
+   font-family: 'a Astro Space', sans-serif;
+  
+}
+
+nav ul li a:hover{
+
+    color:aqua;
+    transition: .3s;
+}
+
+nav ul li ul li{
+    display: none;
+}
+
+nav ul li:hover ul li{
+    display: block;
+}
+
+button {
+    
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+}
+
+button:hover{
+
+    background-color: cyan;
+    transition: .4s;
+}
+
+
+
+/* Products */
+
+
+.products{
+    background-color: #163F53;
+    height: 170vh;
+    width: 100%;
+ 
+   }
+
+.products h1{
+    font-size: 42px;
+    align-self: center;
+    text-shadow: 3px 3px cyan;
+    background-color: #163F53;
+    color: white;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    font-family: 'a Astro Space', sans-serif;
+    padding-top: 30px;
+}
+
+
+.photos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+    padding: 20px;
+    
+
+}
+
+.img img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: 4px groove rgb(57, 141, 141) ;
+}
+
+.text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 120px;
+    font-family: 'a Astro Space', sans-serif;
+  }
+
+.text button:hover{
+
+    background-color: cyan;
+    color: #163F53;
+    transition: .4s;
+}
+
+
+.text h2{
+    
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    color:cyan;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+.text p{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    color:cyan;
+    width: 380px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-left: 40px;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color:#09232F;
+    color: cyan;
+    padding: 20px;
+    width: 100%;
+    
+  }
+  
+  .f {
+    display: flex;
+    justify-content: space-evenly;
+    color: #16B0A8;
+    padding-bottom: 25px;
+  }
+  
+  .f h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 18px;
+    align-items: center;
+
+  }
+
+  .f h2+h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+
+  .footermain {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px; 
+    color: grey;
+  }
+  
+  .footerleft {
+    display: flex;
+    width: 15%;
+    flex-wrap: nowrap;
+  }
+  
+
+  .footerright{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+    justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+    
+  }
+
+  .end {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 35px; 
+  }
+  
