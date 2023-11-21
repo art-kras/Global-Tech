@@ -1,3 +1,5 @@
+/* Navigation bar */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -94,104 +96,68 @@ button:hover{
     transition: .4s;
 }
 
-.img{
-
-    margin: 25px;
-    
-}
-
- /* About us */
 
 
- .about{
-  background-color: #163F53;
-  height: 130vh;
-  width: 100%;
- }
+/* Products */
+
+
+.products{
+    background-color: #163F53;
+    height: 170vh;
+    width: 100%;
  
-.about {
-  display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: stretch;
-  }
+   }
 
-.about .h1{
-
+.products h1{
     font-size: 42px;
     align-self: center;
     text-shadow: 3px 3px cyan;
     background-color: #163F53;
     color: white;
     display: flex;
-	  flex-direction: column;
-	  flex-wrap: wrap;
-	  justify-content: flex-start;
-	  align-items: center;
-	  align-content: stretch;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
     font-family: 'a Astro Space', sans-serif;
+    padding-top: 30px;
 }
-  
-  .left {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  
-  .left img {
-    max-width: 300px;
-    max-height: 300px;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 20px;
-    
-  }
-  
-  .text-box {
-    flex: 1;
-  }
-  
-  .text-box h2 {
-    color: cyan;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    margin-left: 30px;
-    font-family: 'a Astro Space', sans-serif;
- 
-  }
-  
-  .text-box p {
-    max-width: 600px;
-    max-height: 400px;
-    color: cyan;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    line-height: 30px;
-    font-family: 'a Astro Space', sans-serif;
 
-  }
-  
-.about .btn {
+
+.photos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+    padding: 20px;
     
-    align-self: center;
+
+}
+
+.img img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: 4px groove rgb(57, 141, 141) ;
+}
+
+.text button {
     padding: 10px 20px;
     font-size: 1em;
     background-color: transparent;
     color: white;
     border: 2px solid white;
     cursor: pointer;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    width: 150px;
-    height: 100px;
+    margin-left: 120px;
     font-family: 'a Astro Space', sans-serif;
   }
 
-.about .btn:hover{
+.text button:hover{
 
     background-color: cyan;
     color: #163F53;
@@ -199,85 +165,37 @@ button:hover{
 }
 
 
-
-
-@media (max-width: 768px) {
-    .left {
-        flex-direction: column;
-        max-height: 100%;
-    }
-
-}
-
-
-/* Products */
-
-/* slider */
- /* not finished */
-
-/* .sliderBack {
-
-    margin: 5%;
-    margin-left: 20%;
-    background-color: #163F53;
-    height: 120vh;
-    width: 100%;
+.text h2{
+    
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	align-items: center;
 	align-content: stretch;
-}
-
-.slider {
-
-    
-    position: relative;
-    width: 1000px;
-    height: 600px;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-}
-
-.slider ul{
-    position: relative;
-    list-style: none;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    transition: all 750ms ease;
-    left: 0;
+    color:cyan;
+    margin-top: 15px;
+    margin-bottom: 5px;
 
 }
 
-.slider ul li{
-     
-    position: relative;
-    height: 100%;
-    float: left;
-
+.text p{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    color:cyan;
+    width: 380px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-left: 40px;
 }
 
-.slider ul li img{
-    width: 1000px;
-    height: 600px;
-}
-
-.slider .prev{
-    width: 50px;
-    line-height: 50px;
-    font-size: 2rem;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 150ms ease;
-} */
 
 
 /* Footer */
