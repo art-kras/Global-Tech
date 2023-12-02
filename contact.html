@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="logo">
+                <img src="global-tech-logo.png" alt="Logo" class="logo">
+            </div>
+            <nav>
+                <h2 class="logo">Global Tech</h2>
+                <ul>
+                   <li><a href="Home.html">Home</a></li>
+                   <li><a href="Products_Page.html">Products</a>
+                       <ul>
+                           <li><a href="">PC</a></li>
+                           <li><a href="">Network Devices</a></li>
+                           <li><a href="">Cybersecurity tools</a></li>
+                           <li><a href="">Servers</a></li>
+                           <li><a href="">Accessories</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="Trainings_Page.html">Trainings</a>
+                       <ul>
+                           <li><a href="#it-essentials">IT Essentials</a></li>
+                           <li><a href="#networking">Networking</a></li>
+                           <li><a href="#penetration-testing">Penetration Testing</a></li>
+                           <li><a href="#database-system">Database Systems</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="About_Us_Page.html">About Us</a></li>
+                   <li><a href="Contact Us_Page.html">Contact Us</a>
+                   </li>
+                </ul>
+   
+               
+   
+                <button type="button"><a href="Cart_page.html">&#x1F6D2;</a></button>
+                
+                <br><br><br>
+           </nav>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="contain">
+            <div class="row">
+                <div class="col">
+                    <div class="form">
+                        <div class="information">
+                            <h1>Contact Us</h1>
+                            <hr>
+                            <h4>55 Clark St, Brooklyn, NY 11201, USA</h4>
+                            <h4>globaltech@info.com\ Tel:(866) 216-1075</h4>
+                        </div>
+                        <form class="fclass" method="post" action="#">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Name :</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required
+                                        class="formcontrol" required>
+                                </div>
+                                <div class="col">
+                                    <label for="email">Surname :</label>
+                                    <input type="text" id="surname" name="surname" placeholder="Your Surname" required
+                                        class="formcontrol" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="tel">Phone :</label>
+                                    <input type="tel" id="phone" name="phone"
+                                        placeholder="Your Phone Number (123-456-789)" id="tel" class="formcontrol"
+                                        pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                                </div>
+                                <div class="col">
+                                    <label for="">Email :</label>
+                                    <input type="text" name="email" placeholder="Your Email"
+                                        id="" class="formcontrol" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col_full">
+                                    <label>Your Message: </label>
+                                    <textarea class="formcontrol" name="message" id="message" cols="30" rows="6"
+                                        placeholder="Write your message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col_full">
+                                    <input type="submit" value="Contact Us" class="button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="adress">
+                        <h1>Visit Us:</h1>
+                        <hr>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.9242041775797!2d-73.99567571741063!3d40.697666928775774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a37e53e41eb%3A0xad2d816bfe668a5!2s55%20Clark%20St%2C%20Brooklyn%2C%20NY%2011201%2C%20USA!5e0!3m2!1sen!2s!4v1639318543611!5m2!1sen!2s"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col3">
+                <div class="social vertical">
+                    <h3>Our social media:</h3>
+                    <hr>
+                    <div class="links">
+                        <a href="#"><img src="icons/facebook.svg" height="50px"></img></a>
+                        <a href="#"><img src="icons/twitter.svg" height="50px"></img></a>
+                        <a href="#"><img src="icons/insta.svg" height="50px"></img></a>
+                        <a href="#"><img src="icons/pin.svg" height="50px"></img></a>
+                        <a href="#"><img src="icons/youtube.svg" height="50px"></img></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="InfoOpening vertical">
+                    <h3>Our working hours</h3>
+                    <hr>
+                    <p>Monday - Friday: 9 am - 5:30 pm</p>
+                    <p>Saturday: 8:30 am - 12 pm</p>
+                </div>
+            </div>
+            <div class="col3 ">
+                <div class="mailingList">
+                    <h3>Join our mailing list:</h3>
+                    <hr>
+                    <form method="post" action="#" class="fclass" id="footerform">
+                        <label for="email2">Email :</label>
+                        <input type="email" id="email2" name="email2" placeholder="Your Email" required
+                            class="formcontrol" required>
+                        <div class="col_full" id="fsub">
+                            <input type="submit" value="Contact Us" class="button">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

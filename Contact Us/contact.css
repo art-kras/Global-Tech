@@ -1,0 +1,326 @@
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.img{
+
+    margin: 25px;
+    width:max-content
+    
+}
+
+.container {
+    position: relative;
+}
+.navigation {
+    display: block;
+    height: 70px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px; /* Set the height of your logo */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+.nav-links {
+    display: flex;
+    margin-left: auto; /* Move the nav-links to the right */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.cart img {
+    height: 30px; /* Set the height of your shopping cart icon */
+}
+
+
+nav{
+    align-items: right;
+    justify-content: space-between;
+    padding: 25px 10px;
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
+    display: inline-flex;
+}
+nav li {
+    display: inline-block;
+    margin-right: 90px;
+    margin-top: -5px;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    margin-top: 11px;
+    font-family: 'a Astro Space', sans-serif;
+    display: inline-flex;
+    margin-right: 40px;
+
+}
+
+
+nav ul{
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'a Astro Space', sans-serif;
+}
+
+nav ul li{
+    
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    line-height: 40px;  
+    line-clamp: 20;
+    text-align: justify;
+    font-size: 20px;
+}
+
+nav ul li a{
+    
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+   text-align: middle;
+   width: 400px;
+   font-family: 'a Astro Space', sans-serif;
+  
+}
+
+nav ul li a:hover{
+
+    color:aqua;
+    transition: .3s;
+}
+
+nav ul li ul li{
+    display: none;
+}
+
+nav ul li:hover ul li{
+    display: block;
+}
+
+button {
+    
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+}
+
+button:hover{
+
+    background-color: cyan;
+    transition: .4s;
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    margin: 0;
+    /* background-color: white ; */
+    /* background-repeat: no-repeat; */
+    /* color: white; */
+    /* background: linear-gradient(rgba(81, 96, 107,.8), rgba(124, 10, 46, 0.8)); */
+}
+
+div {
+    display: block;
+}
+
+.content-wrapper {
+    padding: 50px 0;
+    
+}
+
+.contain {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid rgb(52, 108, 212);
+    border-radius: 2px;
+    max-width: 85%;
+    margin-top:82px;
+    /* background-color: white; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px !important;
+
+}
+
+.col_full {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.fclass {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    position: relative;
+
+}
+
+.formcontrol {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    margin-right: 8px;
+    border: none;
+    border-bottom: 2px solid grey;
+    /* NDRRO NGJYREN E BORDER QYSH DUSH  */
+    /* background-color: transparent;
+    color: white; */
+}
+
+#message {
+    display: block;
+    font-family: inherit;
+    width: 100%;
+}
+
+.button {
+    border: none;
+    background: rgb(57, 55, 185);
+    color: white;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    border: 2px solid rgb(57, 55, 185);
+    background: white;
+    color: black;
+}
+
+@media screen and (max-width:650px) {
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .adress {
+        margin-bottom: 70px;
+    }
+    .col3{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+footer{
+    background-color:#A7ABAF;
+    color: white;
+}
+.col3{
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+}
+
+footer hr{
+    width: 80%;
+}
+
+.vertical{
+    border-right: 2px solid x;
+    height: 80%;
+    margin:2px;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin: 10px 0;
+        order: 1;
+    }
+
+    .cart-btn {
+        order: -1;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+    .cart {
+        order: -1; /* Move cart to the top in the column layout */
+    }
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .training-section {
+        padding: 30px;
+    }
+}

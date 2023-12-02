@@ -101,13 +101,12 @@ button:hover{
 }
 
 
-
 /* products */
 
 
 .inventory {
     background-color: #163F53;
-    height: 210vh;
+    height: 220vh;
     width: 100%;
     display: flex;
 	  flex-direction: column;
