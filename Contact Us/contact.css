@@ -1,61 +1,19 @@
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-.img{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 
-    margin: 25px;
-    width:max-content
-    
 }
 
-.container {
-    position: relative;
-}
-.navigation {
+.navigation{
+
     display: block;
-    height: 70px;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-}
-
-.logo img {
-    height: 40px; /* Set the height of your logo */
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-
-.nav-links {
-    display: flex;
-    margin-left: auto; /* Move the nav-links to the right */
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-.cart img {
-    height: 30px; /* Set the height of your shopping cart icon */
 }
 
 
@@ -65,13 +23,6 @@ nav{
     padding: 25px 10px;
     display: flex;
     margin-bottom: 50px;
-    text-align: center;
-    display: inline-flex;
-}
-nav li {
-    display: inline-block;
-    margin-right: 90px;
-    margin-top: -5px;
 }
 
 .logo{
@@ -79,9 +30,6 @@ nav li {
     font-size: 28px;
     margin-top: 11px;
     font-family: 'a Astro Space', sans-serif;
-    display: inline-flex;
-    margin-right: 40px;
-
 }
 
 
@@ -103,6 +51,8 @@ nav ul li{
     line-clamp: 20;
     text-align: justify;
     font-size: 20px;
+  
+
 }
 
 nav ul li a{
@@ -144,32 +94,24 @@ button:hover{
     transition: .4s;
 }
 
+.img{
 
-
-
-
-
-
-* {
-    box-sizing: border-box;
+    margin: 25px;
+    
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-    margin: 0;
-    /* background-color: white ; */
-    /* background-repeat: no-repeat; */
-    /* color: white; */
-    /* background: linear-gradient(rgba(81, 96, 107,.8), rgba(124, 10, 46, 0.8)); */
-}
 
-div {
-    display: block;
-}
+
+/* Form */
 
 .content-wrapper {
     padding: 50px 0;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    color: cyan;
+    margin: 0;
+    display: block;
+    background-color: #163F53;
     
 }
 
@@ -234,8 +176,6 @@ div {
 
 .button {
     border: none;
-    background: rgb(57, 55, 185);
-    color: white;
     text-transform: uppercase;
     height: 45px;
     line-height: 1.5;
@@ -244,9 +184,8 @@ div {
 }
 
 .button:hover {
-    border: 2px solid rgb(57, 55, 185);
-    background: white;
-    color: black;
+    background-color: cyan;
+    transition: .4s;
 }
 
 @media screen and (max-width:650px) {
