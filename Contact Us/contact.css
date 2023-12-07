@@ -162,7 +162,7 @@ button:hover{
     margin-bottom: 16px;
     margin-right: 8px;
     border: none;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid rgb(2, 114, 137);
     /* NDRRO NGJYREN E BORDER QYSH DUSH  */
     /* background-color: transparent;
     color: white; */
@@ -204,8 +204,8 @@ button:hover{
 }
 
 footer{
-    background-color:#A7ABAF;
-    color: white;
+    background-color: rgb(9,35,47);
+    color:cyan;
 }
 .col3{
     flex: 0 0 33%;
