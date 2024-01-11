@@ -80,7 +80,7 @@
             <button type="submit">Submit</button>
         </form>
 
-        <span>Already have an account ? <a href="../Log-in/Login.html">Log-in</a> .</span>
+        <span>Already have an account ? <a href="../Log-in/Login.php">Log-in</a> .</span>
     </div>
 
     <script>

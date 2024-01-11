@@ -15,14 +15,14 @@
             <nav>
                  <h2 class="logo">Global Tech</h2>
                  <ul>
-                    <li><a href="../Home_Page/HomePage.html">Home</a></li>
-                    <li><a href="../Products Page/Products_Page.html">Products</a>
+                    <li><a href="../Home_Page/HomePage.php">Home</a></li>
+                    <li><a href="../Products Page/Products_Page.php">Products</a>
                         <ul>
-                            <li><a href="../Products Page/Products/PC and Laptops page/PC.html">PC</a></li>
-                            <li><a href="../Products Page/Products/Network Devices/Network.html">Network Devices</a></li>
-                            <li><a href="../Products Page/Products/Cybersecurity tools/Cyber.html">Cybersecurity tools</a></li>
-                            <li><a href="../Products Page/Products/Servers/Server.html">Servers</a></li>
-                            <li><a href="../Products Page/Products/Accesories/Accesorie.html">Accessories</a></li>
+                            <li><a href="../Products Page/Products/PC and Laptops page/PC.php">PC</a></li>
+                            <li><a href="../Products Page/Products/Network Devices/Network.php">Network Devices</a></li>
+                            <li><a href="../Products Page/Products/Cybersecurity tools/Cyber.php">Cybersecurity tools</a></li>
+                            <li><a href="../Products Page/Products/Servers/Server.php">Servers</a></li>
+                            <li><a href="../Products Page/Products/Accesories/Accesorie.php">Accessories</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Trainings</a>
@@ -33,16 +33,16 @@
                             <li><a href="#">Database Systems</a></li>
                         </ul>
                     </li>
-                    <li><a href="../About Us/About_Us.html">About Us</a>
+                    <li><a href="../About Us/About_Us.php">About Us</a>
                         <ul>
-                            <li><a href="../Contact Us/contact.html">Contact us</a></li>
+                            <li><a href="../Contact Us/contact.php">Contact us</a></li>
                         </ul>
                     </li>
 
                     <li><a href="#">Profile</a>
                         <ul>
-                            <li><a href="../Profile_Page/Log-in/Login.html">Log-In</a></li>
-                            <li><a href="../Profile_Page/Register/register.html">Register</a></li>
+                            <li><a href="../Profile_Page/Log-in/Login.php">Log-In</a></li>
+                            <li><a href="../Profile_Page/Register/register.php">Register</a></li>
                         </ul>
                     </li>
                  </ul>

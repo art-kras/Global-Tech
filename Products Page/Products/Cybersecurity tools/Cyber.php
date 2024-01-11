@@ -17,17 +17,17 @@
             <nav>
                  <h2 class="logo">Global Tech</h2>
                  <ul>
-                    <li><a href="../../../Home_Page/HomePage.html">Home</a></li>
-                    <li><a href="../../Products_Page.html">Products</a>
+                    <li><a href="../../../Home_Page/HomePage.php">Home</a></li>
+                    <li><a href="../../Products_Page.php">Products</a>
                         <ul>
-                            <li><a href="../PC and Laptops page/PC.html">PC</a></li>
-                            <li><a href="../Network Devices/Network.html">Network Devices</a></li>
-                            <li><a href="../Cybersecurity tools/Cyber.html">Cybersecurity tools</a></li>
-                            <li><a href="../Servers/Server.html">Servers</a></li>
-                            <li><a href="../Accesories/Accesorie.html">Accessories</a></li>
+                            <li><a href="../PC and Laptops page/PC.php">PC</a></li>
+                            <li><a href="../Network Devices/Network.php">Network Devices</a></li>
+                            <li><a href="../Cybersecurity tools/Cyber.php">Cybersecurity tools</a></li>
+                            <li><a href="../Servers/Server.php">Servers</a></li>
+                            <li><a href="../Accesories/Accesorie.php">Accessories</a></li>
                         </ul>
                     </li>
-                    <li><a href="../../../Trainings/Trainings_Page.html">Trainings</a>
+                    <li><a href="../../../Trainings/Trainings_Page.php">Trainings</a>
                         <ul>
                             <li><a href="#">IT Essentials</a></li>
                             <li><a href="#">Networking</a></li>
@@ -35,16 +35,16 @@
                             <li><a href="#">Database Systems</a></li>
                         </ul>
                     </li>
-                    <li><a href="../../../About Us/About_Us.html">About Us</a>
+                    <li><a href="../../../About Us/About_Us.php">About Us</a>
                         <ul>
-                            <li><a href="../../../Contact Us/contact.html">Contact us</a></li>
+                            <li><a href="../../../Contact Us/contact.php">Contact us</a></li>
                         </ul>
                     </li>
 
                     <li><a href="#">Profile</a>
                         <ul>
-                            <li><a href="../../../Profile_Page/Log-in/Login.html">Log-In</a></li>
-                            <li><a href="../../../Profile_Page/Register/register.html">Register</a></li>
+                            <li><a href="../../../Profile_Page/Log-in/Login.php">Log-In</a></li>
+                            <li><a href="../../../Profile_Page/Register/register.php">Register</a></li>
                         </ul>
                     </li>
                  </ul>
@@ -66,14 +66,14 @@
 
      <div class="products">
 
-        <h1 class="h1">Servers</h1>
+        <h1 class="h1">Cybersecurity Tools</h1>
     
     
         <div class="photos">
             <div class="img">
-                <img src="../../Pics/server.png" alt="" class="img">
+                <img src="../../Pics/flipper.png" alt="" class="img">
                 <div class="text">
-                   <h2>Supermicro A+</h2>
+                   <h2>Flipper zero </h2>
                    <br>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam optio maxime architecto necessitatibus, voluptatem pariatur ratione tempore?
                     Temporepisci eum voluptatem earum, doloremque minus!</p>
@@ -81,9 +81,9 @@
                 </div>
             </div>
             <div class="img">
-                <img src="../../Pics/Server2.png" alt="" class="img">
+                <img src="../../Pics/hackrf..png" alt="" class="img">
                 <div class="text">
-                    <h2>Cisco UCS</h2>
+                    <h2>HackRF-One</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam optio maxime architecto necessitatibus, voluptatem pariatur ratione tempore?
                         Temporepisci eum voluptatem earum, doloremque minus!</p>
@@ -91,16 +91,45 @@
                 </div>
             </div>
             <div class="img">
-                <img src="../../Pics/server3.png" alt="" class="img">
+                <img src="../../Pics/raspberryPi.png" alt="" class="img">
                 <div class="text">
-                    <h2>Cisco UCS - B420</h2>
+                    <h2>Raspberry PI</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam optio maxime architecto necessitatibus, voluptatem pariatur ratione tempore?
                         Temporepisci eum voluptatem earum, doloremque minus!</p>
                         <button>Read More</button>
                 </div>
             </div>
-            
+            <div class="img">
+                <img src="../../Pics/rubber_ducky.png" alt="" class="img">
+                <div class="text">
+                    <h2>Rubber Ducky</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam optio maxime architecto necessitatibus, voluptatem pariatur ratione tempore?
+                        Temporepisci eum voluptatem earum, doloremque minus!</p>
+                        <button>Read More</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="../../Pics/wifi_pinapple.png" alt="" class="img">
+                <div class="text">
+                    <h2>Wi-fi Pinapple</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam optio maxime architecto necessitatibus, voluptatem pariatur ratione tempore?
+                        Temporepisci eum voluptatem earum, doloremque minus!</p>
+                        <button>Read More</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="../../Pics/wifi_deauther.png" alt="" class="img">
+                <div class="text">
+                  <h2>Wifi Deauther watch</h2>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam optio maxime architecto necessitatibus, voluptatem pariatur ratione tempore?
+                    Temporepisci eum voluptatem earum, doloremque minus!</p>
+                    <button>Read More</button>
+                </div>
+            </div>
     
         </div>
     </div>

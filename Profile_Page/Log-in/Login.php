@@ -77,7 +77,7 @@
             <button type="submit">Submit</button>
         </form>
 
-        <span>Don't have an account ? <a href="../Register/register.html">Register here</a>.</span>
+        <span>Don't have an account ? <a href="../Register/register.php">Register here</a>.</span>
     </div>
 
     <script>
