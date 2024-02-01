@@ -1,119 +1,54 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once 'user.php';
+
+if (isset($_POST['registerBtn'])) {
+
+    // echo "Received data: ";
+
+    $id = null;
+    $name = $_POST['name'];
+    $lastName = $_POST['lastName'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $role = 'user';
+
+    // echo "$name, $lastName, $username, $email, $password";
+
+    $user = new User();
+    $registrationResult = $user->register($id, $name, $lastName, $username, $email, $password, $role);
+
+    if ($registrationResult === true) {
+        // echo "Registration successful";
+    } else {
+        echo "Registration failed: $registrationResult";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E Register Form</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #163F53;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .register-form {
-            border-radius: 10px;
-            background-color: #09232F;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            border: 1px solid cyan;
-            padding: 20px;
-            width: 450px;
-            height: 400px;
-            color: white;
-        }
-        input {
-            background-color: #163F53;
-            border-radius: 5px;
-            display: block;
-            width: 250px;
-            height: 40px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px 25px;
-            font-size: 1em;
-            background-color: #163F53;
-            color: gray;
-            border: 2px solid gray;
-            cursor: pointer;
-            font-family: 'a Astro Space', sans-serif;
-        }
-
-        button:hover{
-            background-color: cyan;
-            color: #163F53;
-            transition: .4s;
-        }
-
-        span{
-            display: block;
-            margin: 30px 20px;
-            text-align:center;
-            font-size: 1.2em;
-            color:gray;
-        }
-
-    </style>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Register Form</title>
 </head>
 <body>
     <div class="container">
-        <form class="register-form" id="register-form">
-            <input type="text" id="name" placeholder="Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Submit</button>
+        <form class="register-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" autocomplete="off">
+            <input type="text" name="name" id="name" placeholder="Name" required><br><br>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required><br><br>
+            <input type="text" name="username" id="username" placeholder="Username" required><br><br>
+            <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+            <input type="submit" name="registerBtn" value="Register" id="registerBtn">
         </form>
-
-        <span>Already have an account ? <a href="../Log-in/Login.php">Log-in</a> .</span>
+        <span>Already have an account? <a href="../Log-in/Login.php">Log-in</a>.</span>
     </div>
-
-    <script>
-        document.getElementById('register-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            let name = document.getElementById('name').value;
-            let lastName = document.getElementById('lastName').value;
-            let username = document.getElementById('username').value;
-            let email = document.getElementById('email').value;
-            let password = document.getElementById('password').value;
-
-            if (name === '' || lastName === '' || username === '' || email === '' || password === '') {
-                alert('Please fill all fields');
-                return;
-            }
-
-            let emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email');
-                return;
-            }
-
-
-            let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-            if (!passwordRegex.test(password)) {
-                alert('Password should be at least 8 characters and include at least one letter and one number');
-                return;
-            }
-
-
-            alert('Form submitted successfully');
-        });
-    </script>
 </body>
 </html>
