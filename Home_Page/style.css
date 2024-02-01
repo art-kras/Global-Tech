@@ -533,3 +533,144 @@ footer {
     padding-top: 35px; 
   }
   
+  /*FOOTER REPONSIVE*/
+  
+  @media (max-width: 768px) {
+    .navigation {
+      height: auto;
+    }
+  
+    nav {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    nav ul li {
+      float: none;
+      width: auto;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .footermain {
+      flex-direction: column;
+    }
+  
+    .footerleft {
+      width: 100%;
+    }
+  
+    .footerright {
+      align-items: center;
+    }
+  }
+
+  /*NAV RESPONSIVE*/
+
+
+/* Responsive Navigation Styles */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      padding: 0;
+  }
+
+  nav ul li {
+      position: relative;
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+  }
+
+  nav ul li ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: none;
+      width: 100%;
+      background-color: #333;
+      z-index: 1;
+  }
+
+  nav ul li:hover ul {
+      display: block;
+  }
+
+  nav ul li ul li {
+      display: block;
+      text-align: center;
+  }
+
+  nav ul li ul {
+      left: 0;
+      margin-top: -30px;
+  }
+
+  button {
+      margin: 10px auto;
+      display: block;
+      z-index: 1;
+  }
+
+  /* Adjustments for other sections */
+  .content-container {
+      text-align: center;
+  }
+
+  .training, .Products {
+      padding: 20px;
+  }
+
+  .t_cont img, #kontenti img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+/* Responsive Styles for Content Container */
+.content-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.content-container .text {
+  font-size: 24px;
+}
+
+/* Responsive Styles for Training Section */
+.training {
+  padding: 20px;
+}
+
+.t_cont img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  font-size: 18px;
+}
+
+/* Responsive Styles for Products Section */
+.Products {
+  padding: 20px;
+}
+
+#kontenti img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btnProd {
+  font-size: 18px;
+}
