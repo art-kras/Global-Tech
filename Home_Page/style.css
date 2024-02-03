@@ -1,235 +1,108 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-  color: #ffffff; 
-  font-size: 48px;
+  box-sizing: border-box;
 }
 
-#navigation {
-  display: block;
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  padding: 20px;
-}
-
-#navigation nav {
-  align-items: right;
-  justify-content: space-between;
-  padding: 25px 10px;
-  display: flex;
-  margin-bottom: 50px;
-}
-
-#navigation .logo {
-  color: white;
-  font-size: 28px;
-  margin-top: 11px;
+body {
   font-family: 'a Astro Space', sans-serif;
 }
 
-#navigation nav ul {
-  margin: 0px;
-  padding: 0px;
+.navigation {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(earth_map.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 10px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  color: white;
+  font-size: px;
+
+}
+
+nav ul {
   list-style: none;
   font-family: 'a Astro Space', sans-serif;
 }
 
-#navigation nav ul li {
+nav ul li {
   float: left;
   width: 200px;
   height: 40px;
   padding: 10px 20px;
   line-height: 40px;
-  line-clamp: 20;
   text-align: justify;
   font-size: 20px;
+  padding: 10px;
 }
 
-#navigation nav ul li a {
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   display: block;
   text-align: middle;
   width: 400px;
-  font-family: 'a Astro Space', sans-serif;
+  padding: 10px 0;
+
 }
 
-#navigation nav ul li a:hover {
+nav ul li a:hover {
   color: aqua;
-  transition: .3s;
+  transition: .10s;
 }
 
-#navigation nav ul li ul li {
+nav ul li ul li {
   display: none;
 }
 
-#navigation nav ul li:hover ul li {
-  display: block;
-}
-
-#navigation button {
-  border: none;
-  padding: 8px 25px;
-  border-radius: 8px;
-}
-
-#navigation button:hover {
-  background-color: cyan;
-  transition: .4s;
-} */
-
-
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-
-}
-
-.navigation{
-
-  display: block;
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(earth_map.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-
-nav{
-  align-items: right;
-  justify-content: space-between;
-  padding: 25px 10px;
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.logo{
-  color: white;
-  font-size: 28px;
-  margin-top: 11px;
-  font-family: 'a Astro Space', sans-serif;
-}
-
-
-nav ul{
-
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  font-family: 'a Astro Space', sans-serif;
-}
-
-nav ul li{
-  
-  float: left;
-  width: 200px;
-  height: 40px;
-  padding: 10px 20px;
-  line-height: 40px;  
-  line-clamp: 20;
-  text-align: justify;
-  font-size: 20px;
-
-
-}
-
-nav ul li a{
-  
- color: white;
- text-decoration: none;
- font-weight: bold;
- display: block;
- text-align: middle;
- width: 400px;
- font-family: 'a Astro Space', sans-serif;
-
-}
-
-nav ul li a:hover{
-
-  color:aqua;
-  transition: .3s;
-}
-
-nav ul li ul li{
-  display: none;
-}
-
-nav ul li:hover ul li{
+nav ul li:hover ul li {
   display: block;
 }
 
 button {
-  
   border: none;
   padding: 8px 25px;
   border-radius: 8px;
+  margin-top: 10px;
 }
 
-button:hover{
-
+button:hover {
   background-color: cyan;
   transition: .4s;
 }
 
-.img{
-
-  margin: 25px;
-  
-}
-
 .content-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.content-container .text {
-
-  color: white;
-  font-size: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'a Astro Space', sans-serif;
-  font-size: 48px;
-}
-
-.content-container .image-container {
-  max-width: 100%;
-  height: auto;
-}
-#texti{
-  font-size: 1000px;
-}
-.content-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0; 
-  animation: fadeIn 1.5s ease-in-out forwards; 
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  margin-top: 50px;
 }
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
+
 hr {
   border: none;
   height: 2px;
@@ -250,163 +123,108 @@ hr {
 
 @keyframes expandLeft {
   0% {
-      width: 0;
+    width: 0;
   }
   100% {
-      width: 50%;
+    width: 50%;
   }
 }
 
 @keyframes expandRight {
   0% {
-      width: 0;
+    width: 0;
   }
   100% {
-      width: 50%;
+    width: 50%;
   }
 }
 
-.content-container {
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-
-
-
- 
 /* Trainings */
 
-.training{
+.training {
   background-color: #09232F;
-  height: 150vh;
-  width: 100%;
- }
- 
-.trainign {
+  height: auto;
+}
+
+.h1 {
+  font-size: 48px;
+  align-self: center;
+  text-shadow: 3px 3px cyan;
+  color: white;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: stretch;
-  }
-
-.training .h1{
-
-    font-size: 48px;
-    align-self: center;
-    text-shadow: 3px 3px cyan;
-    color: white;
-    display: flex;
-	  flex-direction: column;
-	  flex-wrap: wrap;
-	  justify-content: flex-start;
-	  align-items: center;
-	  align-content: stretch;
-    font-family: 'a Astro Space', sans-serif;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'a Astro Space', sans-serif;
 }
-  
- 
-  
-  .t_cont img {
 
-    display: flex;
-    align-items: center;
-    max-width: 600px;
-    max-height: 0 auto;
-    margin: 0 auto;
-    margin-top: 40px;
-    border-radius: 20px;
-    
-  }
-  
-  .text-box {
-    flex: 1;
-  }
-  
+.t_cont img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 20px;
+}
 
-  
-  .text-box p {
-    max-width: 600px;
-    max-height: 0 auto;
-    color: cyan;
-    margin: 0 auto;
-    padding-top: 50px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'a Astro Space', sans-serif;
 
-  }
-  
+.text-box {
+  flex: 1;
+}
+
+.text-box p {
+  max-width: 100%;
+  color: cyan;
+  margin: 0 auto;
+  padding-top: 50px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'a Astro Space', sans-serif;
+}
+
 .training .btn {
-    
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 150px;
-    height: 80px;
-    font-family: 'a Astro Space', sans-serif;
-  }
-
-.training .btn:hover{
-
-    background-color: cyan;
-    color: #163F53;
-    transition: .4s;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 80px;
+  font-family: 'a Astro Space', sans-serif;
 }
 
-
-
-
-@media (max-width: 768px) {
-    .left {
-        flex-direction: column;
-        max-height: 100%;
-    }
-
+.training .btn:hover {
+  background-color: cyan;
+  color: #163F53;
+  transition: .4s;
 }
 
-
-
-
-
-/* Products */
-
-/* Slider */
+/* Products Slider */
 
 .Products {
   background-color: #163F53;
-  height: 90vh;
-  width: cover;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Products .h1{
-
+.Products .h1 {
   font-size: 42px;
   align-self: center;
   text-shadow: 3px 3px cyan;
   color: white;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  align-content: stretch;
   font-family: 'a Astro Space', sans-serif;
 }
-
 
 #kontenti {
   display: flex;
@@ -414,22 +232,20 @@ hr {
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI light', Tahoma;
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
 }
 
 #kontenti img {
-  max-width: 700px;
-  height: 400px;
+  max-width: 100%;
+  height: auto;
   border-radius: 20px;
   border: 4px groove rgb(57, 141, 141);
-  transition: opacity 0.8s ease; /* Smooth transition effect */
- 
+  transition: opacity 0.8s ease;
 }
 
-.btnProd{
-
+.btnProd {
   align-self: center;
   padding: 10px 20px;
   font-size: 1em;
@@ -446,231 +262,231 @@ hr {
   font-family: 'a Astro Space', sans-serif;
 }
 
-.btnProd:hover{
-
+.btnProd:hover {
   background-color: cyan;
-    color: #163F53;
-    transition: .4s;
+  color: #163F53;
+  transition: .4s;
 }
-
-
-
-
-
-
 
 /* Footer */
 
 footer {
-
-    
-    background-color:#09232F;
-    color: cyan;
-    padding: 20px;
-    width: 100%;
-    
-  }
-  
-  .f {
-    display: flex;
-    justify-content: space-evenly;
-    color: #16B0A8;
-    padding-bottom: 25px;
-  }
-  
-  .f h2 {
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 18px;
-    align-items: center;
-
-  }
-
-  .f h2+h2 {
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-
-  }
-  
-  .social-media {
-    display: flex;
-    gap: 10px;
-    
-  }
-  
-
-  .footermain {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px; 
-    color: rgb(2, 114, 137);
-  }
-  
-  .footerleft {
-    display: flex;
-    width: 15%;
-    flex-wrap: nowrap;
-  }
-  
-
-  .footerright{
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-    justify-content: flex-start;
-	align-items: flex-end;
-	align-content: stretch;
-    
-  }
-
-  .end {
-    color: rgb(2, 114, 137, 2);
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 35px; 
-  }
-  
-  /*FOOTER REPONSIVE*/
-  
-  @media (max-width: 768px) {
-    .navigation {
-      height: auto;
-    }
-  
-    nav {
-      flex-direction: column;
-      margin-bottom: 20px;
-    }
-  
-    nav ul li {
-      float: none;
-      width: auto;
-      text-align: center;
-      padding: 10px;
-    }
-  
-    .footermain {
-      flex-direction: column;
-    }
-  
-    .footerleft {
-      width: 100%;
-    }
-  
-    .footerright {
-      align-items: center;
-    }
-  }
-
-  /*NAV RESPONSIVE*/
-
-
-/* Responsive Navigation Styles */
-@media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  nav ul {
-      padding: 0;
-  }
-
-  nav ul li {
-      position: relative;
-      float: none;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 5px;
-  }
-
-  nav ul li ul {
-      position: absolute;
-      top: 0;
-      left: 100%;
-      display: none;
-      width: 100%;
-      background-color: #333;
-      z-index: 1;
-  }
-
-  nav ul li:hover ul {
-      display: block;
-  }
-
-  nav ul li ul li {
-      display: block;
-      text-align: center;
-  }
-
-  nav ul li ul {
-      left: 0;
-      margin-top: -30px;
-  }
-
-  button {
-      margin: 10px auto;
-      display: block;
-      z-index: 1;
-  }
-
-  /* Adjustments for other sections */
-  .content-container {
-      text-align: center;
-  }
-
-  .training, .Products {
-      padding: 20px;
-  }
-
-  .t_cont img, #kontenti img {
-      max-width: 100%;
-      height: auto;
-  }
+  background-color: #09232F;
+  color: cyan;
+  padding: 20px;
+  width: 100%;
 }
 
-/* Responsive Styles for Content Container */
-.content-container {
+.f {
+  display: flex;
+  justify-content: space-evenly;
+  color: #16B0A8;
+  padding-bottom: 25px;
+}
+
+.f h2 {
+  margin: 0;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.f h2+h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.footermain {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  color: rgb(2, 114, 137);
+}
+
+.footerleft {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.footerright {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: stretch;
+  width: 100%; /* Adjusted width for responsiveness */
+}
+
+.end {
+  color: rgba(2, 114, 137, 0.2); /* Adjusted the alpha value for transparency */
   text-align: center;
-  padding: 20px;
-}
+  margin-top: 20px;
+  padding-top: 35px;}
 
-.content-container .text {
-  font-size: 24px;
-}
+  .content-container .text {
+      color: white; /* Ensure the text color is set to white */
+      font-size: 70px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: 'a Astro Space', sans-serif;
+      font-size: 48px;
+    }
 
-/* Responsive Styles for Training Section */
-.training {
-  padding: 20px;
+ 
+
+.t_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .t_cont img {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  max-width: 60%; 
 }
-
-.text-box p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.btn {
-  font-size: 18px;
-}
-
-/* Responsive Styles for Products Section */
 .Products {
-  padding: 20px;
+  background-color: #163F53;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Products .h1 {
+  font-size: 42px;
+  align-self: center;
+  text-shadow: 3px 3px cyan;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'a Astro Space', sans-serif;
+}
+
+#kontenti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI light', Tahoma;
+  width: 80%; /* Adjusted width for responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 20px;
+  padding: 0; /* Reset padding */
 }
 
 #kontenti img {
   max-width: 100%;
   height: auto;
+  border-radius: 20px;
+  border: 4px groove rgb(57, 141, 141);
+  transition: opacity 0.8s ease;
+  max-width: 100%; /* Set a maximum width for the images */
 }
 
 .btnProd {
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  font-family: 'a Astro Space', sans-serif;
 }
+
+.btnProd:hover {
+  background-color: cyan;
+  color: #163F53;
+  transition: .4s;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav ul li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    width: 100%;
+  }
+
+  nav ul li:hover ul li {
+    display: none;
+  }
+
+  .content-container .text {
+    font-size: 24px;
+  }
+
+  .t_cont img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Adjusted margin */
+  }
+
+  .text-box p {
+    padding-top: 20px; /* Adjusted padding */
+    font-size: 16px;
+  }
+
+  .btnProd {
+    margin: 0;
+  }
+
+  .footermain {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .footerleft {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .footerright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .end {
+    margin-top: 10px;
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-container .text {
+    display: none; /* Hide the text on small screens */
+  }
+  
