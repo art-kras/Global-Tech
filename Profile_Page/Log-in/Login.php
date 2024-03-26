@@ -1,112 +1,124 @@
+<?php
+session_start();
 
-<!-- Venis Maloku-->
+// Include the DB class
+require_once '../Register/db.php';
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['loginBtn'])) {
+    // Retrieve form data
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Create a new instance of DB class
+    $db = new DB();
+    $conn = $db->getConnection();
+
+    // Prepare and execute the SQL statement
+    $sql = $conn->prepare("SELECT * FROM users WHERE username = :username");
+    $sql->bindParam(':username', $username);
+    $sql->execute();
+
+    // Fetch the user's data
+    $user = $sql->fetch(PDO::FETCH_ASSOC);
+
+    // Verify the password
+    if ($user && password_verify($password, $user['password'])) {
+        // Password is correct, set session variables
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['role'] = $user['role'];
+
+        // Redirect to the dashboard or another page
+        header("Location: ../admin.php");
+        exit;
+    } else {
+        // Invalid username or password
+        $loginError = "Invalid username or password";
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
-
-        *{
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             box-sizing: border-box;
         }
 
-        body {
-            background-color: #163F53;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
         }
-        .register-form {
-            border-radius: 10px;
-            background-color: #09232F;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            border: 1px solid cyan;
-            padding: 20px;
-            width: 450px;
-            height: 400px;
-            color: white;
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
         }
-        input {
-            background-color: #163F53;
-            border-radius: 5px;
-            display: block;
-            width: 250px;
-            height: 40px;
+
+        .error {
+            color: red;
             margin-bottom: 10px;
         }
-
-        button {
-            padding: 10px 25px;
-            font-size: 1em;
-            background-color: #163F53;
-            color: gray;
-            border: 2px solid gray;
-            cursor: pointer;
-            font-family: 'a Astro Space', sans-serif;
-        }
-
-        button:hover{
-            background-color: cyan;
-            color: #163F53;
-            transition: .4s;
-        }
-
-        span{
-            display: block;
-            margin: 30px 20px;
-            text-align:center;
-            font-size: 1.2em;
-            color:gray;
-        }
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <form class="register-form" id="register-form">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Submit</button>
-        </form>
 
-        <span>Don't have an account ? <a href="../Register/register.php">Register here</a>.</span>
-    </div>
+<div class="container">
+    <h2>Login</h2>
+    <?php if (isset($loginError)) { ?>
+        <p class="error"><?php echo $loginError; ?></p>
+    <?php } ?>
+    <form method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" name="loginBtn" value="Login">
+    </form>
+</div>
 
-    <script>
-        document.getElementById('register-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            let username = document.getElementById('username').value;
-            let password = document.getElementById('password').value;
-
-            let emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email');
-                return;
-            }
-
-
-            let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-            if (!passwordRegex.test(password)) {
-                alert('Password should be at least 8 characters and include at least one letter and one number');
-                return;
-            }
-
-
-            alert('Form submitted successfully');
-        });
-    </script>
 </body>
 </html>
